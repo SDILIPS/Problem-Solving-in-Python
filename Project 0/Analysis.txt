@@ -1,0 +1,16 @@
+Run time analysis (Worst-Case Big-O Notation) for the following tasks:
+
+- Task 0:
+    Since the first element and last element is just accessed and printed, and len() takes O(1), the worst case time complexity is O(1)
+
+- Task 1:
+    Since the two input lists are iterated one after the other, the worst case time complexity is O(n) + O(n), which can be approximated to O(n)
+
+- Task 2:
+    Since we are iterating the 'calls' list once, the worst case time complexity is O(n)
+
+- Task 3:
+    Since we are iterating the 'calls' list once, inserting to a set once, the worst case time complexity is O(n). However, the sort takes O(n logn) time complexity. Thus, the overall time complexity is O(n logn).
+
+- Task 4:
+    Since we are iterating the 'calls' list once, inserting to a set once, the worst case time complexity is O(n). However, the sort takes O(n logn) time complexity. Thus, the overall time complexity is O(n logn).
