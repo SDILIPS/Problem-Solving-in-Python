@@ -29,9 +29,17 @@ The list of numbers should be print out one per line in lexicographic order with
 called_by_telemarketers = set()
 
 for entry in calls:
-  if "140" in entry[0]:
-      if entry[0][0:3] == '140':
-        called_by_telemarketers.add(entry[0])
+    called_by_telemarketers.add(entry[0])
+
+for entry in calls:
+    if entry[1] in called_by_telemarketers:
+        called_by_telemarketers.remove(entry[1])
+
+for entry in texts:
+    if entry[0] in called_by_telemarketers:
+        called_by_telemarketers.remove(entry[0])
+    if entry[1] in called_by_telemarketers:
+        called_by_telemarketers.remove(entry[1])
 
 print("These numbers could be telemarketers: ")
 print(*sorted(called_by_telemarketers), sep = "\n")

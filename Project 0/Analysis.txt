@@ -7,10 +7,16 @@ Run time analysis (Worst-Case Big-O Notation) for the following tasks:
     Since the two input lists are iterated one after the other, the worst case time complexity is O(n) + O(n), which can be approximated to O(n)
 
 - Task 2:
-    Since we are iterating the 'calls' list once, the worst case time complexity is O(n)
+    Since we are iterating the 'calls' list once, inserting to dictionary once, and iterating the dictionary once, the worst case time complexity is O(n)
 
 - Task 3:
     Since we are iterating the 'calls' list once, inserting to a set once, the worst case time complexity is O(n). However, the sort takes O(n logn) time complexity. Thus, the overall time complexity is O(n logn).
 
 - Task 4:
-    Since we are iterating the 'calls' list once, inserting to a set once, the worst case time complexity is O(n). However, the sort takes O(n logn) time complexity. Thus, the overall time complexity is O(n logn).
+    We are performing the following operations:
+    - iterating the 'calls' list twice - O(2n)
+    - iterating the 'texts' list once - O(n)
+    - inserting to a set once - O(n)
+    - the worst case time complexity is O(n). 
+    - However, the sort takes O(n logn) time complexity. 
+    - Thus, the overall time complexity is O(n logn).

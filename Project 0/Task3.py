@@ -56,7 +56,8 @@ def process_num(phone_num):
       called_to_bangalore += 1
     return phone_num[1:].split(")")[0]
   else:
-    return phone_num[0:5] 
+    if phone_num[0] is '7' or phone_num[0] is '8' or phone_num[0] is '9':
+      return phone_num[0:4] 
 
 for entry in calls:
   if "080" in entry[0]:
